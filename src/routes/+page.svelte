@@ -1,10 +1,9 @@
 <script>
-	import welcome from '$lib/images/svelte-welcome.webp'
-	import mtd from '$lib/images/mtd.jpg'
-	import possumtory from '$lib/images/possumtory.png'
-	import merit from '$lib/images/merit.jpg'
-	import Showcase from './Showcase.svelte'
-	import ClickedShowcase from './ClickedShowcase.svelte'
+	import welcome from "$lib/images/svelte-welcome.webp"
+	import mtd from "$lib/images/mtd.jpg"
+	import possumtory from "$lib/images/possumtory.png"
+	import merit from "$lib/images/merit.jpg"
+	import Showcase from "./Showcase.svelte"
 
 	export let data
 	console.log(data)
@@ -26,16 +25,9 @@
 		</div>
 	</h1>
 
-	{#each data.summaries as { slug, title }}
-		<li><a href="/{slug}">{title}</a></li>
+	{#each data.summaries as { slug, title, image }}
+		<a href="/{slug}"><Showcase imageSrc={image} text={title} /></a>
 	{/each}
-
-	<!-- <Showcase imageSrc={mtd} text={'Medieteknikdagen'} />
-	<Showcase imageSrc={possumtory} text={'ThreeJS Possum'} />
-	<Showcase imageSrc={merit} text={'Merit'} />
-	<Showcase imageSrc={welcome} text={'this is an image'} />
-	<Showcase imageSrc={mtd} text={'Mediteknikdagen'} />
-	<Showcase imageSrc={mtd} text={'Mediteknikdagen'} /> -->
 </section>
 
 <style>
@@ -52,8 +44,15 @@
 
 	h1 {
 		width: 100%;
-		font-family: 'Odibee sans';
+		font-family: "Odibee sans";
 		color: #ffc971;
+	}
+
+	a {
+		display: flex;
+		width: max-content;
+		align-items: center;
+		justify-content: center;
 	}
 
 	.projects {
