@@ -1,5 +1,4 @@
 <script>
-	import posts from './data.js'
 	import welcome from '$lib/images/svelte-welcome.webp'
 	import mtd from '$lib/images/mtd.jpg'
 	import possumtory from '$lib/images/possumtory.png'
@@ -8,8 +7,7 @@
 	import ClickedShowcase from './ClickedShowcase.svelte'
 
 	export let data
-
-	console.log(posts)
+	console.log(data)
 </script>
 
 <svelte:head>
