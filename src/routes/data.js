@@ -7,7 +7,7 @@ export const posts = [
 	{
 		slug: 'sveltelogo',
 		title: 'Welcome',
-		image: welcome,
+		image: mtd,
 	},
 
 	{
@@ -24,7 +24,7 @@ export const posts = [
 	{
 		slug: 'sveltelog',
 		title: 'Welcome',
-		image: welcome,
+		image: possumtory,
 	},
 
 	{

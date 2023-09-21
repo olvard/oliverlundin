@@ -17,8 +17,8 @@
 	}
 
 	h1 {
-		font-family: 'Odibee sans';
-		color: #ffc971;
+		font-family: "Modak", cursive;
+		color: #071e58;
 	}
 
 	.image-page img {

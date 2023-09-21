@@ -1,11 +1,11 @@
 <script>
-	import { Link } from 'svelte-routing'
-	export let imageSrc = ''
-	export let text = ''
-	export let ref = ''
+	import { Link } from "svelte-routing"
+	export let imageSrc = ""
+	export let text = ""
+	export let ref = ""
 
 	function handleImageError() {
-		console.error('Image could not be loaded.')
+		console.error("Image could not be loaded.")
 	}
 </script>
 
@@ -34,11 +34,9 @@
 		margin-left: 16px;
 		margin-right: 16px;
 		font-size: 22px; /* Adjust text size as needed */
-		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-		/* text-decoration: none;
+		font-family: monospace;
+		text-decoration: none;
 		color: black;
-		padding: 10px 10px 10px 10px; */
-		/* width: fit-content; */
 	}
 
 	.container {
@@ -53,14 +51,22 @@
 		background-color: white;
 		width: 50%;
 		margin-top: -25px;
-		/* display: flex;
-		align-items: center;
-		justify-content: center; */
+		overflow: hidden; /* Hide any content that overflows */
+		transition: transform 0.3s ease; /* Add smooth transition for transform property */
 		box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 40px -20px;
 		border-radius: 5px;
 	}
 
+	.card2:hover {
+		transform: scale(1.1); /* Zoom in by 10% on hover */
+	}
+
 	a {
-		/* display: inline-block; */
+		transition: color 0.3s ease;
+	}
+
+	a:hover {
+		text-decoration: none;
+		color: #071e58;
 	}
 </style>

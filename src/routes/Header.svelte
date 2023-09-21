@@ -1,15 +1,31 @@
 <script>
-	import { page } from '$app/stores'
-	import logo from '$lib/images/logo.svg'
-	import mail from '$lib/images/mail.svg'
+	import { onMount } from "svelte"
+
+	let text = ""
+	const originalText = "OLIVER LUNDIN"
+
+	onMount(() => {
+		// Function to simulate typing effect
+		function typeText() {
+			if (text.length < originalText.length) {
+				text = originalText.slice(0, text.length + 1)
+				setTimeout(typeText, 120)
+			}
+		}
+
+		typeText()
+	})
 </script>
 
 <header>
 	<div class="corner">
-		<img src={logo} alt="logo" />
+		<!-- <img src={logo} alt="logo" /> -->
+		<h1>{text}</h1>
+		<!-- <h1 class="offset">Lundin</h1> -->
 	</div>
 
-	<div class="corner">
+	<div class="nav">
+		<!-- <a href="mailto:oliver.lundin@live.se"><h1 class="nav">PROJECTS</h1></a> -->
 		<a href="mailto:oliver.lundin@live.se"><h1>CONTACT</h1></a>
 	</div>
 </header>
@@ -18,6 +34,7 @@
 	header {
 		display: flex;
 		/* flex-direction: column; */
+		flex-wrap: wrap;
 		justify-content: center;
 		align-items: center;
 		flex: 0.6;
@@ -25,9 +42,12 @@
 	}
 
 	h1 {
-		font-family: 'Odibee sans';
-		color: #ffc971;
-		margin: 0 0 0 0;
+		/* display: inline-block; */
+		font-family: "Modak", cursive;
+		color: #071e58;
+		margin: 0px;
+		padding-bottom: 0px;
+		font-size: 34px;
 	}
 
 	a {
@@ -41,16 +61,23 @@
 	}
 
 	.corner {
-		width: 40%;
+		width: 50%;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 	}
 
-	.corner img {
+	.nav {
 		width: 50%;
-		height: 50%;
-		object-fit: contain;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.nav h1 {
+		font-size: 30px;
+		/* padding-right: 100px; */
 	}
 </style>
