@@ -2,6 +2,7 @@
 	import { Link } from 'svelte-routing'
 	export let imageSrc = ''
 	export let text = ''
+	export let ref = ''
 
 	function handleImageError() {
 		console.error('Image could not be loaded.')
@@ -12,7 +13,7 @@
 	<img src={imageSrc} alt="error" on:error={handleImageError} />
 
 	<div class="card2">
-		<h1>{text}</h1>
+		<a href={ref}><h1>{text}</h1></a>
 	</div>
 </div>
 
@@ -57,5 +58,9 @@
 		justify-content: center; */
 		box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 40px -20px;
 		border-radius: 5px;
+	}
+
+	a {
+		/* display: inline-block; */
 	}
 </style>

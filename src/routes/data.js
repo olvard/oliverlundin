@@ -21,4 +21,21 @@ export const posts = [
 		title: 'Possumtory',
 		image: possumtory,
 	},
+	{
+		slug: 'sveltelog',
+		title: 'Welcome',
+		image: welcome,
+	},
+
+	{
+		slug: 'mt',
+		title: 'Medieteknikdagen',
+		image: mtd,
+	},
+
+	{
+		slug: 'posum',
+		title: 'Possumtory',
+		image: possumtory,
+	},
 ]

@@ -1,9 +1,9 @@
 <script>
-	import welcome from "$lib/images/svelte-welcome.webp"
-	import mtd from "$lib/images/mtd.jpg"
-	import possumtory from "$lib/images/possumtory.png"
-	import merit from "$lib/images/merit.jpg"
-	import Showcase from "./Showcase.svelte"
+	import welcome from '$lib/images/svelte-welcome.webp'
+	import mtd from '$lib/images/mtd.jpg'
+	import possumtory from '$lib/images/possumtory.png'
+	import merit from '$lib/images/merit.jpg'
+	import Showcase from './Showcase.svelte'
 
 	export let data
 	console.log(data)
@@ -26,7 +26,7 @@
 	</h1>
 
 	{#each data.summaries as { slug, title, image }}
-		<a href="/{slug}"><Showcase imageSrc={image} text={title} /></a>
+		<Showcase imageSrc={image} text={title} ref="/{slug}" />
 	{/each}
 </section>
 
@@ -44,15 +44,15 @@
 
 	h1 {
 		width: 100%;
-		font-family: "Odibee sans";
+		font-family: 'Odibee sans';
 		color: #ffc971;
 	}
 
 	a {
-		display: flex;
-		width: max-content;
+		/* display: flex;
+
 		align-items: center;
-		justify-content: center;
+		justify-content: center; */
 	}
 
 	.projects {
