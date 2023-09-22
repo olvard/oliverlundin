@@ -8,6 +8,8 @@ export const posts = [
 		slug: 'sveltelogo',
 		title: 'Welcome',
 		image: mtd,
+		image2: possumtory,
+		image3: merit,
 	},
 
 	{
