@@ -13,6 +13,9 @@
 			{#if data.post.image3}
 				<img src={data.post.image3} alt="error" />
 			{/if}
+			{#if data.post.image4}
+				<img src={data.post.image4} alt="error" />
+			{/if}
 		</div>
 	{:else}
 		<div class="single-image">
