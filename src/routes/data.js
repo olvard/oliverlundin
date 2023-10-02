@@ -20,6 +20,8 @@ export const posts = [
 		slug: 'mtd',
 		title: 'Medieteknikdagen',
 		image: mtd,
+		image2: mtd2,
+		image3:mtd3,
 
 	},
 

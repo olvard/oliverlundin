@@ -20,7 +20,7 @@
 <header>
 	<div class="corner">
 		<!-- <img src={logo} alt="logo" /> -->
-		<h1>{text}</h1>
+		<h1><a href="/">{text}</a></h1>
 		<!-- <h1 class="offset">Lundin</h1> -->
 	</div>
 
@@ -59,6 +59,7 @@
 		backface-visibility: hidden;
 		-webkit-transition: color 0.4s;
 		transition: color 0.4s;
+		color: #071e58;
 	}
 
 	@keyframes eff24-move {

@@ -5,7 +5,7 @@
 <h1>{data.post.title}</h1>
 <div class="image-page">
 	{#if data.post.image2 || data.post.image3}
-		<div class="image-grid">
+		<div class="multimg-page">
 			<img src={data.post.image} alt="error" />
 			{#if data.post.image2}
 				<img src={data.post.image2} alt="error" />
@@ -27,29 +27,36 @@
 <style>
 	.image-page {
 		display: flex;
-		/* align-items: center; */
+		flex-direction: column;
+		align-items: center;
 		justify-content: center;
-		height: 100vh;
-		width: 70vw;
-		box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 40px -10px;
+		width: 50vw;
+	}
+
+	.image-page img {
+		margin-top: 10px;
+		width: 70%;
+		height: auto;
+		border-radius: 5px;
+	}
+
+	.multimg-page {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.multimg-page img {
+		margin-top: 10px;
+		width: 50%;
+		height: auto;
+		border-radius: 5px;
 	}
 
 	h1 {
 		font-family: 'Modak', cursive;
 		color: #071e58;
-	}
-
-	.image-grid {
-		display: grid;
-		gap: 1rem;
-		grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-		grid-auto-rows: 240px;
-	}
-
-	.image-grid img {
-		max-width: 100%;
-		height: auto;
-		border-radius: 5px;
 	}
 
 	.single-image {
