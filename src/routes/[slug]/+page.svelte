@@ -3,7 +3,7 @@
 </script>
 
 <h1><a href="/">&#60 </a>{data.post.title}</h1>
-<span />
+<span>{@html data.post.content}</span>
 <div class="image-page">
 	{#if data.post.image2 || data.post.image3}
 		<div class="multimg-page">
@@ -31,12 +31,22 @@
 		color: #071e58;
 	}
 
+	span {
+		width: 40vw;
+		margin: 5px;
+		padding: 5px;
+		text-align: center;
+		box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 40px -10px;
+		font-family: monospace;
+		font-size: larger;
+	}
+
 	.image-page {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		width: 50vw;
+		width: 80vw;
 	}
 
 	.image-page img {
