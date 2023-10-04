@@ -2,11 +2,12 @@
 	export let data
 </script>
 
-<h1>{data.post.title}</h1>
+<h1><a href="/">&#60 </a>{data.post.title}</h1>
+<span />
 <div class="image-page">
 	{#if data.post.image2 || data.post.image3}
 		<div class="multimg-page">
-			<img src={data.post.image} alt="error" />
+			<!-- <img src={data.post.image} alt="error" /> -->
 			{#if data.post.image2}
 				<img src={data.post.image2} alt="error" />
 			{/if}
@@ -25,6 +26,11 @@
 </div>
 
 <style>
+	a {
+		font-family: monospace;
+		color: #071e58;
+	}
+
 	.image-page {
 		display: flex;
 		flex-direction: column;
@@ -55,8 +61,9 @@
 	}
 
 	h1 {
-		font-family: 'Modak', cursive;
+		font-family: monospace;
 		color: #071e58;
+		margin: 4px;
 	}
 
 	.single-image {
