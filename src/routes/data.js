@@ -4,6 +4,13 @@ import mtd2 from '$lib/images/mtd/mtd2.jpg'
 import mtd3 from '$lib/images/mtd/mtd3.jpg'
 import mtd4 from '$lib/images/mtd/mtd4.jpg'
 
+//Bertilchat
+import bertilchat from '$lib/images/bertilchat.png'
+
+//rumpanbar
+import drinkmeny from '$lib/images/rumpanbar/drinkmeny.png'
+import designpdf from '$lib/images/rumpanbar/design.pdf'
+
 //Beavers
 import thumbnail_beaver from '$lib/images/beaver/thumbnail_beaver.jpg'
 import beaver1 from '$lib/images/beaver/beaver1.png'
@@ -30,6 +37,19 @@ export const posts = [
 		image4: mtd4,
 		content: 'Medieteknikdagen is a career fair for students enrolled at the MT program. For this year i was head of graphic design which meant designing many different graphics and prints, here are some examples, you can also check out the full catalog of items <a href="https://www.linkedin.com/in/oliver-lundin/overlay/1635512176401/single-media-viewer/?profileId=ACoAADh9oTUBkRvmhTkAsl_ngyGEg6fZMRkloFc">here.</a>'
 
+	},
+	{
+		slug: 'drinkmeny',
+		title: 'Drinkmeny Koncept',
+		image: drinkmeny,
+		content: 'Drink menu concept for a local bar: <a href="src/lib/images/rumpanbar/design.pdf">pdf</a>' ,
+
+	},
+	{
+		slug: 'bertilchat',
+		title: 'BertilChat',
+		image: bertilchat,
+		content: 'An AI chatbot built with the OpenAi API, it allows you to chat with the local beaver in Norrköping, <a href="https://chatwithbertil.vercel.app/?search=">bertilchat</a>'
 	},
 	{
 		slug: 'beaver',

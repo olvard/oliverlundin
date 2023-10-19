@@ -1,9 +1,5 @@
 <script>
-	import welcome from "$lib/images/svelte-welcome.webp"
-	import mtd from "$lib/images/mtd.jpg"
-	import possumtory from "$lib/images/possumtory.png"
-	import merit from "$lib/images/merit.jpg"
-	import Showcase from "./Showcase.svelte"
+	import Showcase from './Showcase.svelte'
 
 	export let data
 	console.log(data)
@@ -11,7 +7,7 @@
 
 <svelte:head>
 	<title>Oliver Lundin - Projects</title>
-	<meta name="description" content="Svelte demo app" />
+	<meta name="description" content="" />
 </svelte:head>
 
 <section>
