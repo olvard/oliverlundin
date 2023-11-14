@@ -10,8 +10,8 @@
 </script>
 
 <div class="container">
+	<!-- <a href={ref}><img src={imageSrc} alt="error" on:error={handleImageError} /></a> -->
 	<img src={imageSrc} alt="error" on:error={handleImageError} />
-
 	<div class="card2">
 		<a href={ref}><h1>{text}</h1></a>
 	</div>
@@ -29,16 +29,12 @@
 		border-color: white;
 	}
 
-	img:hover {
-		border-color: #f16040;
-	}
-
 	h1 {
 		margin-top: 16px; /* Adjust spacing between image and text */
 		margin-left: 16px;
 		margin-right: 16px;
-		font-size: 22px; /* Adjust text size as needed */
-		font-family: monospace;
+		font-size: 24px; /* Adjust text size as needed */
+		font-family: 'Monomaniac One';
 		text-decoration: none;
 		color: black;
 	}
@@ -63,8 +59,17 @@
 		justify-content: center;
 	}
 
+	.card2 h1 {
+		color: rgb(84, 84, 84);
+	}
+
 	.card2:hover {
-		transform: scale(1.1); /* Zoom in by 10% on hover */
+		background-color: #f16040;
+		transform: scale(1.1);
+	}
+
+	.card2:hover h1 {
+		color: white;
 	}
 
 	a {

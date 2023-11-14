@@ -47,7 +47,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
-		margin-left: 60px;
+		margin-left: 140px;
 	}
 
 	h1 {
