@@ -2,7 +2,7 @@
 	import { onMount } from 'svelte'
 
 	let text = ''
-	const originalText = 'OLIVER LUNDIN'
+	const originalText = 'OLIVER LUNDIN.'
 
 	onMount(() => {
 		// Function to simulate typing effect
@@ -18,36 +18,68 @@
 </script>
 
 <header>
-	<div class="corner">
+	<div class="title">
 		<!-- <img src={logo} alt="logo" /> -->
 		<h1><a href="/">{text}</a></h1>
+		<h2>PROJECTS</h2>
 		<!-- <h1 class="offset">Lundin</h1> -->
 	</div>
 
-	<div class="nav">
-		<!-- <a href="mailto:oliver.lundin@live.se"><h1 class="nav">PROJECTS</h1></a> -->
+	<!-- <div class="nav">
 		<a href="mailto:oliver.lundin@live.se"><h1>CONTACT</h1></a>
-	</div>
+	</div> -->
 </header>
 
 <style>
 	header {
 		display: flex;
-		/* flex-direction: column; */
 		flex-wrap: wrap;
-		justify-content: center;
-		align-items: center;
+		/* justify-content: left; */
+		align-items: flex-start;
 		flex: 0.6;
-		padding-top: 50px;
+		padding-top: 0px;
+		margin: 0px;
+		background-color: white;
+		width: 100vw;
+	}
+
+	.title {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		margin-left: 60px;
 	}
 
 	h1 {
-		/* display: inline-block; */
-		font-family: 'Modak', cursive;
-		color: #071e58;
+		font-family: 'Monomaniac One';
 		margin: 0px;
 		padding-bottom: 0px;
-		font-size: 34px;
+		color: #f16040;
+		text-align: center;
+		font-family: Monomaniac One;
+		font-size: 74px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		margin-bottom: -35px;
+		margin-top: -25px;
+	}
+
+	@media (max-width: 768px) {
+		h1 {
+			font-size: 40px;
+		}
+	}
+
+	h2 {
+		margin: 0px;
+		color: #f16040;
+		text-align: center;
+		font-family: Monomaniac One;
+		font-size: 42px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
 	}
 
 	a {
@@ -59,7 +91,7 @@
 		backface-visibility: hidden;
 		-webkit-transition: color 0.4s;
 		transition: color 0.4s;
-		color: #071e58;
+		color: #f16040;
 	}
 
 	@keyframes eff24-move {
@@ -91,26 +123,5 @@
 		-webkit-animation-iteration-count: 1;
 		animation-iteration-count: 1;
 		text-decoration: none;
-	}
-
-	.corner {
-		width: 50%;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-	}
-
-	.nav {
-		width: 50%;
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		align-items: center;
-	}
-
-	.nav h1 {
-		font-size: 30px;
-		/* padding-right: 100px; */
 	}
 </style>

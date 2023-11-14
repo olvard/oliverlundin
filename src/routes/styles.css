@@ -1,6 +1,7 @@
 @import '@fontsource/fira-mono';
 @import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Staatliches&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Modak&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monomaniac+One&display=swap');
 
 :root {
 	--font-body: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
@@ -20,12 +21,13 @@
 
 body {
 	min-height: 100vh;
+
 	margin: 0;
 	background-attachment: fixed;
 	/* background-color: var(--color-bg-1); */
 	background-size: 100vw 100vh;
 	/* background: linear-gradient(180deg, #FFF 0%, #E2E2E2 100%); */
-	background-color: white;
+	background-color: #F4F4F4;
 
 }
 
@@ -48,14 +50,14 @@ a:hover {
 	text-decoration: underline;
 }
 
-h1 {
+/* h1 {
 	font-size: 2rem;
 	text-align: center;
 }
 
 h2 {
 	font-size: 1rem;
-}
+} */
 
 pre {
 	font-size: 16px;
@@ -87,11 +89,11 @@ button:focus:not(:focus-visible) {
 	outline: none;
 }
 
-@media (min-width: 720px) {
+/* @media (min-width: 720px) {
 	h1 {
 		font-size: 2.4rem;
 	}
-}
+} */
 
 .visually-hidden {
 	border: 0;

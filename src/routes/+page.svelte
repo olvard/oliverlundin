@@ -22,9 +22,13 @@
 		flex-wrap: wrap; /* Allow items to wrap to the next row */
 		justify-content: center; /* Space items evenly */
 		align-items: flex-start;
-		flex: 0.6;
-		padding: 20px; /* Add some spacing around the items */
-		max-width: 90vw; /* Set a maximum width for the gallery */
-		margin: 0 auto;
+		padding: 0px; /* Add some spacing around the items */
+		max-width: 100vw; /* Set a maximum width for the gallery */
+	}
+
+	@media (max-width: 768px) {
+		section {
+			max-width: 100vw;
+		}
 	}
 </style>

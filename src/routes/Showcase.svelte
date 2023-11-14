@@ -1,11 +1,11 @@
 <script>
-	import { Link } from "svelte-routing"
-	export let imageSrc = ""
-	export let text = ""
-	export let ref = ""
+	import { Link } from 'svelte-routing'
+	export let imageSrc = ''
+	export let text = ''
+	export let ref = ''
 
 	function handleImageError() {
-		console.error("Image could not be loaded.")
+		console.error('Image could not be loaded.')
 	}
 </script>
 
@@ -19,8 +19,8 @@
 
 <style>
 	img {
-		max-width: 80%;
-		max-height: 80%; /* Adjust the maximum image height as needed */
+		width: 655px;
+		height: 360px;
 		border-radius: 5px;
 		box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 40px -10px;
 		margin-top: 20px;
@@ -40,7 +40,7 @@
 	}
 
 	.container {
-		width: 40%;
+		width: 45%;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -68,5 +68,22 @@
 	a:hover {
 		text-decoration: none;
 		color: #071e58;
+	}
+
+	@media (max-width: 1535px) {
+		img {
+			width: 560px;
+			height: 300px;
+		}
+	}
+
+	@media (max-width: 1068px) {
+		.container {
+			width: 100%;
+		}
+		img {
+			width: 100%;
+			height: 100%;
+		}
 	}
 </style>
