@@ -2,7 +2,7 @@
 	export let data
 </script>
 
-<h1><a href="/">&#60 </a>{data.post.title}</h1>
+<h1><a class="symbol" href="/">&#60 </a>{data.post.title}</h1>
 <span>{@html data.post.content}</span>
 <div class="image-page">
 	{#if data.post.image2 || data.post.image3}
@@ -28,7 +28,11 @@
 <style>
 	a {
 		font-family: monospace;
-		color: #071e58;
+		color: #f16040;
+	}
+
+	.symbol {
+		font-size: 38px;
 	}
 
 	span {
@@ -71,8 +75,8 @@
 	}
 
 	h1 {
-		font-family: monospace;
-		color: #071e58;
+		font-family: 'Monomaniac One';
+		color: gray;
 		margin: 4px;
 	}
 

@@ -10,8 +10,8 @@
 </script>
 
 <div class="container">
-	<!-- <a href={ref}><img src={imageSrc} alt="error" on:error={handleImageError} /></a> -->
-	<img src={imageSrc} alt="error" on:error={handleImageError} />
+	<a href={ref}><img src={imageSrc} alt="error" on:error={handleImageError} /></a>
+	<!-- <img src={imageSrc} alt="error" on:error={handleImageError} /> -->
 	<div class="card2">
 		<a href={ref}><h1>{text}</h1></a>
 	</div>
