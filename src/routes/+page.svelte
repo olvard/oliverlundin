@@ -19,11 +19,11 @@
 <style>
 	section {
 		display: flex;
-		flex-wrap: wrap; /* Allow items to wrap to the next row */
-		justify-content: center; /* Space items evenly */
+		flex-wrap: wrap;
+		justify-content: center;
 		align-items: flex-start;
-		padding: 0px; /* Add some spacing around the items */
-		max-width: 100vw; /* Set a maximum width for the gallery */
+		padding: 0px;
+		/* width: 100vw;	 */
 	}
 
 	@media (max-width: 768px) {

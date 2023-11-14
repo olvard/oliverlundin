@@ -29,6 +29,10 @@
 		border-color: white;
 	}
 
+	img:hover {
+		border-color: #f16040;
+	}
+
 	h1 {
 		margin-top: 16px; /* Adjust spacing between image and text */
 		margin-left: 16px;
@@ -51,10 +55,12 @@
 		background-color: white;
 		width: 50%;
 		margin-top: -25px;
-		overflow: hidden; /* Hide any content that overflows */
-		transition: transform 0.3s ease; /* Add smooth transition for transform property */
+		overflow: hidden;
+		transition: transform 0.3s ease;
 		box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 40px -20px;
 		border-radius: 5px;
+		display: flex;
+		justify-content: center;
 	}
 
 	.card2:hover {
@@ -72,7 +78,7 @@
 
 	@media (max-width: 1535px) {
 		img {
-			width: 560px;
+			width: 90%;
 			height: 300px;
 		}
 	}
@@ -81,9 +87,14 @@
 		.container {
 			width: 100%;
 		}
+
 		img {
-			width: 100%;
-			height: 100%;
+			width: 80%;
+			height: 80%;
+		}
+
+		.card2 {
+			width: 70%;
 		}
 	}
 </style>

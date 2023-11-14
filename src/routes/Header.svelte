@@ -65,12 +65,6 @@
 		margin-top: -25px;
 	}
 
-	@media (max-width: 768px) {
-		h1 {
-			font-size: 40px;
-		}
-	}
-
 	h2 {
 		margin: 0px;
 		color: #f16040;
@@ -80,6 +74,22 @@
 		font-style: normal;
 		font-weight: 400;
 		line-height: normal;
+	}
+
+	@media (max-width: 768px) {
+		h1 {
+			font-size: 30px;
+			margin-top: -5px;
+		}
+
+		h2 {
+			font-size: 25px;
+			margin-top: 20px;
+		}
+
+		.title {
+			margin-left: 15px;
+		}
 	}
 
 	a {
@@ -94,34 +104,7 @@
 		color: #f16040;
 	}
 
-	@keyframes eff24-move {
-		30% {
-			-webkit-transform: translate3d(0, -5px, 0) rotate(5deg);
-			transform: translate3d(0, -5px, 0) rotate(5deg);
-		}
-		50% {
-			-webkit-transform: translate3d(0, -3px, 0) rotate(-4deg);
-			transform: translate3d(0, -3px, 0) rotate(-4deg);
-		}
-		80% {
-			-webkit-transform: translate3d(0, 0, 0) rotate(-3deg);
-			transform: translate3d(0, 0, 0) rotate(-3deg);
-		}
-		100% {
-			-webkit-transform: rotate(0deg);
-			transform: rotate(0deg);
-		}
-	}
-
 	a:hover {
-		-webkit-animation-name: eff24-move;
-		animation-name: eff24-move;
-		-webkit-animation-duration: 0.4s;
-		animation-duration: 0.4s;
-		-webkit-animation-timing-function: linear;
-		animation-timing-function: linear;
-		-webkit-animation-iteration-count: 1;
-		animation-iteration-count: 1;
 		text-decoration: none;
 	}
 </style>
