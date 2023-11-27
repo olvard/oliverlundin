@@ -4,28 +4,34 @@
 
 <h1><a class="symbol" href="/">&#60 </a>{data.post.title}</h1>
 <span>{@html data.post.content}</span>
-<div class="image-page">
-	{#if data.post.image2 || data.post.image3}
-		<div class="multimg-page">
-			<!-- <img src={data.post.image} alt="error" /> -->
-			{#if data.post.image2}
-				<img src={data.post.image2} alt="error" />
-			{/if}
-			{#if data.post.image3}
-				<img src={data.post.image3} alt="error" />
-			{/if}
-			{#if data.post.image4}
-				<img src={data.post.image4} alt="error" />
-			{/if}
-		</div>
-	{:else}
-		<div class="single-image">
-			<img src={data.post.image} alt="error" />
-		</div>
-	{/if}
+<div class="container">
+	<div class="image-page">
+		{#if data.post.image2 || data.post.image3}
+			<div class="multimg-page">
+				<!-- <img src={data.post.image} alt="error" /> -->
+				{#if data.post.image2}
+					<img src={data.post.image2} alt="error" />
+				{/if}
+				{#if data.post.image3}
+					<img src={data.post.image3} alt="error" />
+				{/if}
+				{#if data.post.image4}
+					<img src={data.post.image4} alt="error" />
+				{/if}
+			</div>
+		{:else}
+			<div class="single-image">
+				<img src={data.post.image} alt="error" />
+			</div>
+		{/if}
+	</div>
 </div>
 
 <style>
+	/* .container {
+		width: 50%;
+	} */
+
 	a {
 		font-family: monospace;
 		color: #f16040;
@@ -88,5 +94,22 @@
 		max-width: 100%;
 		height: auto;
 		border-radius: 5px;
+	}
+
+	/* .container{
+		width: auto;
+	} */
+
+	@media (max-width: 768px) {
+		.container {
+			max-width: 100vw;
+			height: 100vh;
+		}
+		span {
+			width: 90vw;
+		}
+		.image-page img {
+			width: 90vw;
+		}
 	}
 </style>

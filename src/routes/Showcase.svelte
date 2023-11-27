@@ -10,8 +10,8 @@
 </script>
 
 <div class="container">
-	<a href={ref}><img src={imageSrc} alt="error" on:error={handleImageError} /></a>
-	<!-- <img src={imageSrc} alt="error" on:error={handleImageError} /> -->
+	<!-- <a class="picturelink" href={ref}><img src={imageSrc} alt="error" on:error={handleImageError} /></a> -->
+	<img src={imageSrc} alt="error" on:error={handleImageError} />
 	<div class="card2">
 		<a href={ref}><h1>{text}</h1></a>
 	</div>
@@ -91,11 +91,13 @@
 	@media (max-width: 1068px) {
 		.container {
 			width: 100%;
+			display: flex;
+			justify-content: center;
 		}
 
 		img {
-			width: 80%;
-			height: 80%;
+			width: 90%;
+			height: 90%;
 		}
 
 		.card2 {
