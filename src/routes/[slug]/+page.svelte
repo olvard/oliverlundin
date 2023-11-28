@@ -2,8 +2,10 @@
 	export let data
 </script>
 
-<h1><a class="symbol" href="/">&#60 </a>{data.post.title}</h1>
-<span>{@html data.post.content}</span>
+<div class="titlecard">
+	<h1><a class="symbol" href="/">&#60 </a>{data.post.title}</h1>
+	<span>{@html data.post.content}</span>
+</div>
 <div class="container">
 	<div class="image-page">
 		{#if data.post.image2 || data.post.image3}
@@ -28,9 +30,18 @@
 </div>
 
 <style>
-	/* .container {
-		width: 50%;
-	} */
+	.container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		/* justify-content: center; */
+	}
+
+	.titlecard {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
 
 	a {
 		font-family: monospace;
@@ -109,7 +120,7 @@
 			width: 90vw;
 		}
 		.image-page img {
-			width: 90vw;
+			width: 90%;
 		}
 	}
 </style>
