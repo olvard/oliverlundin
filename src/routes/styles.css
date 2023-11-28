@@ -27,7 +27,7 @@ body {
 	/* background-color: var(--color-bg-1); */
 	background-size: 100vw 100vh;
 	/* background: linear-gradient(180deg, #FFF 0%, #E2E2E2 100%); */
-	background-color: #F4F4F4;
+	background-color: rgb(26, 26, 26);
 	overflow-x: hidden;
 
 }
@@ -39,7 +39,7 @@ body {
 
 /* Track */
 ::-webkit-scrollbar-track {
-	background: #f1f1f1;
+	background: rgb(2, 2, 2);
 }
 
 /* Handle */

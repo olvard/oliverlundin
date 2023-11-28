@@ -24,9 +24,9 @@
 		border-radius: 5px;
 		box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 40px -10px;
 		margin-top: 20px;
-		border-style: solid;
+		/* border-style: solid;
 		border-width: 10px;
-		border-color: white;
+		border-color: white; */
 	}
 
 	h1 {

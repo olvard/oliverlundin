@@ -39,8 +39,9 @@
 		flex: 0.6;
 		padding-top: 0px;
 		margin: 0px;
-		background-color: white;
+		background-color: rgb(26, 26, 26);
 		width: 100vw;
+		border-bottom: solid #f16040 2px;
 	}
 
 	.title {
