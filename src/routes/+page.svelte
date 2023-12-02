@@ -21,9 +21,10 @@
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
-		align-items: flex-start;
+		align-items: center;
+		gap: 2.4em;
 		padding: 0px;
-		/* width: 100vw;	 */
+		width: 90%;
 	}
 
 	@media (max-width: 768px) {

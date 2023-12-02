@@ -12,21 +12,16 @@
 <div class="container">
 	<!-- <a class="picturelink" href={ref}><img src={imageSrc} alt="error" on:error={handleImageError} /></a> -->
 	<img src={imageSrc} alt="error" on:error={handleImageError} />
-	<div class="card2">
-		<a href={ref}><h1>{text}</h1></a>
-	</div>
+
+	<a href={ref}><h1>{text}</h1></a>
 </div>
 
 <style>
 	img {
-		width: 655px;
-		height: 360px;
-		border-radius: 5px;
+		width: 260px;
+		height: 160px;
+
 		box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 40px -10px;
-		margin-top: 20px;
-		/* border-style: solid;
-		border-width: 10px;
-		border-color: white; */
 	}
 
 	h1 {
@@ -34,42 +29,23 @@
 		margin-left: 16px;
 		margin-right: 16px;
 		font-size: 24px; /* Adjust text size as needed */
-		font-family: 'Monomaniac One';
+		font-family: 'Syne';
+		font-weight: 700;
 		text-decoration: none;
-		color: black;
+		color: #d9d9d9;
+		margin-bottom: 0px;
 	}
 
 	.container {
-		width: 45%;
+		width: 35%;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		align-items: center;
-	}
-
-	.card2 {
-		background-color: white;
-		width: 50%;
-		margin-top: -25px;
-		overflow: hidden;
-		transition: transform 0.3s ease;
-		box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 40px -20px;
-		border-radius: 5px;
-		display: flex;
-		justify-content: center;
-	}
-
-	.card2 h1 {
-		color: rgb(84, 84, 84);
-	}
-
-	.card2:hover {
-		background-color: #f16040;
-		transform: scale(1.1);
-	}
-
-	.card2:hover h1 {
-		color: white;
+		align-items: left;
+		margin-bottom: -10px;
+		/* border-style: solid;
+		border-width: 7px;
+		border-color: #d9d9d9; */
 	}
 
 	a {
@@ -83,8 +59,10 @@
 
 	@media (max-width: 1535px) {
 		img {
-			width: 90%;
-			height: 300px;
+			width: 100%;
+			height: 250px;
+			/* margin-top: 30px;
+			margin-left: 20px; */
 		}
 	}
 
@@ -98,10 +76,6 @@
 		img {
 			width: 90%;
 			height: 90%;
-		}
-
-		.card2 {
-			width: 70%;
 		}
 	}
 </style>

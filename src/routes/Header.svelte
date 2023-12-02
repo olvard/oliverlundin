@@ -41,7 +41,6 @@
 		margin: 0px;
 		background-color: rgb(26, 26, 26);
 		width: 100vw;
-		border-bottom: solid #f16040 2px;
 	}
 
 	.title {
@@ -52,29 +51,27 @@
 	}
 
 	h1 {
-		font-family: 'Monomaniac One';
+		font-family: 'Syne';
+		font-weight: 800;
 		margin: 0px;
 		padding-bottom: 0px;
-		color: #f16040;
+		color: #d9d9d9;
 		text-align: center;
-		font-family: Monomaniac One;
-		font-size: 74px;
-		font-style: normal;
-		font-weight: 400;
+		font-size: 24px;
 		line-height: normal;
-		margin-bottom: -35px;
-		margin-top: -25px;
+		margin-bottom: -5px;
+		margin-top: 15px;
 	}
 
 	h2 {
 		margin: 0px;
-		color: #f16040;
+		color: #d9d9d9;
 		text-align: center;
-		font-family: Monomaniac One;
-		font-size: 42px;
-		font-style: normal;
-		font-weight: 400;
+		font-family: Syne;
+		font-weight: 800;
+		font-size: 12px;
 		line-height: normal;
+		margin-bottom: 15px;
 	}
 
 	@media (max-width: 768px) {
@@ -102,7 +99,7 @@
 		backface-visibility: hidden;
 		-webkit-transition: color 0.4s;
 		transition: color 0.4s;
-		color: #f16040;
+		color: #d9d9d9;
 	}
 
 	a:hover {
