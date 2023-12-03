@@ -1,5 +1,6 @@
 <script>
 	export let data
+	import { GalleryImage, Lightbox, LightboxGallery, GalleryThumbnail } from 'svelte-lightbox'
 </script>
 
 <div class="titlecard">
@@ -11,15 +12,32 @@
 		{#if data.post.image2 || data.post.image3}
 			<div class="multimg-page">
 				<!-- <img src={data.post.image} alt="error" /> -->
-				{#if data.post.image2}
-					<img src={data.post.image2} alt="error" />
-				{/if}
-				{#if data.post.image3}
-					<img src={data.post.image3} alt="error" />
-				{/if}
-				{#if data.post.image4}
-					<img src={data.post.image4} alt="error" />
-				{/if}
+
+				<LightboxGallery>
+					<svelte:fragment slot="thumbnail">
+						<div class="gallery">
+							<GalleryThumbnail>
+								<img src={data.post.image2} alt="Simple lightbox" />
+							</GalleryThumbnail>
+						</div></svelte:fragment
+					>
+
+					{#if data.post.image2}
+						<GalleryImage>
+							<img src={data.post.image2} alt="error" />
+						</GalleryImage>
+					{/if}
+					{#if data.post.image3}
+						<GalleryImage>
+							<img src={data.post.image3} alt="error" />
+						</GalleryImage>
+					{/if}
+					{#if data.post.image4}
+						<GalleryImage>
+							<img src={data.post.image4} alt="error" />
+						</GalleryImage>
+					{/if}
+				</LightboxGallery>
 			</div>
 		{:else}
 			<div class="single-image">
@@ -33,14 +51,15 @@
 	.container {
 		display: flex;
 		flex-direction: column;
-		align-items: center;
+		align-items: left;
 		/* justify-content: center; */
 	}
 
 	.titlecard {
 		display: flex;
 		flex-direction: column;
-		align-items: center;
+		align-items: left;
+		justify-content: left;
 	}
 
 	a {
@@ -56,17 +75,18 @@
 		width: 40vw;
 		margin: 5px;
 		padding: 5px;
-		text-align: center;
-		box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 40px -10px;
-		font-family: monospace;
+		text-align: left;
+		font-family: 'Syne';
+		font-weight: 400;
 		font-size: larger;
+		color: #d9d9d9;
 	}
 
 	.image-page {
 		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
+		flex-direction: row;
+		align-items: left;
+		justify-content: left;
 		width: 80vw;
 	}
 
@@ -79,10 +99,15 @@
 
 	.multimg-page {
 		display: flex;
-		flex-direction: column;
+		flex-direction: row;
 		align-items: center;
 		justify-content: center;
 	}
+
+	/* .gallery {
+		display: flex;
+		flex-direction: row;
+	} */
 
 	.multimg-page img {
 		margin-top: 10px;
@@ -92,8 +117,8 @@
 	}
 
 	h1 {
-		font-family: 'Monomaniac One';
-		color: gray;
+		font-family: 'Syne';
+		color: #d9d9d9;
 		margin: 4px;
 	}
 

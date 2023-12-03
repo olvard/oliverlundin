@@ -17,6 +17,6 @@
 		width: 100%;
 		margin: 0 auto;
 		box-sizing: border-box;
-		align-items: center;
+		align-items: left;
 	}
 </style>

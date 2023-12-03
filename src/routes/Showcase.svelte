@@ -71,10 +71,11 @@
 			width: 100%;
 			display: flex;
 			justify-content: center;
+			align-items: center;
 		}
 
 		img {
-			width: 90%;
+			width: 100%;
 			height: 90%;
 		}
 	}

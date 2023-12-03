@@ -76,13 +76,14 @@
 
 	@media (max-width: 768px) {
 		h1 {
-			font-size: 30px;
-			margin-top: -5px;
+			font-size: 16px;
+			margin-top: 10px;
 		}
 
 		h2 {
-			font-size: 25px;
-			margin-top: 20px;
+			font-size: 12px;
+			margin-top: 0px;
+			margin-bottom: 5px;
 		}
 
 		.title {

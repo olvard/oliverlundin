@@ -30,6 +30,12 @@
 		justify-content: center;
 	}
 
+	p {
+		font-family: 'Syne';
+		color: antiquewhite;
+		opacity: 20%;
+	}
+
 	img {
 		width: 90%;
 	}
