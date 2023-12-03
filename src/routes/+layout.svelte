@@ -1,12 +1,13 @@
 <script>
 	import Header from './Header.svelte'
 	import './styles.css'
+	import bar from '$lib/images/bar.svg'
 </script>
 
 <div class="app">
 	<Header />
 	<div class="bar">
-		<img src="src/lib/images/bar.svg" alt="svg" />
+		<img src={bar} alt="svg" />
 	</div>
 	<main>
 		<slot />
