@@ -6,7 +6,7 @@
 <div class="app">
 	<Header />
 	<div class="bar">
-		<img src="src/lib/bar.svg" alt="svg" />
+		<img src="src/lib/images/bar.svg" alt="svg" />
 	</div>
 	<main>
 		<slot />
