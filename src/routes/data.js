@@ -35,21 +35,21 @@ export const posts = [
 		image2: mtd2,
 		image3: mtd3,
 		image4: mtd4,
-		content: 'Medieteknikdagen is a career fair for students enrolled at the MT program. For this year i was head of graphic design which meant designing many different graphics and prints, here are some examples, you can also check out the full catalog of items <a href="https://www.linkedin.com/in/oliver-lundin/overlay/1635512176401/single-media-viewer/?profileId=ACoAADh9oTUBkRvmhTkAsl_ngyGEg6fZMRkloFc">here.</a>'
+		content: 'Medieteknikdagen is a career fair for students enrolled at the MT program. For this year i was head of graphic design which meant designing many different graphics and prints, here are some examples.'
 
 	},
 	{
 		slug: 'drinkmeny',
 		title: 'Drinkmeny Koncept',
 		image: drinkmeny,
-		content: 'Drink menu concept for a local bar: <a href="src/lib/images/rumpanbar/design.pdf">pdf</a>' ,
+		content: 'Drink menu concept for a local bar' ,
 
 	},
 	{
 		slug: 'bertilchat',
 		title: 'BertilChat',
 		image: bertilchat,
-		content: 'An AI chatbot built with the OpenAi API, it allows you to chat with the local beaver in Norrköping, <a href="https://chatwithbertil.vercel.app/?search=">bertilchat</a>'
+		content: 'An AI chatbot built with the OpenAi API, it allows you to chat with the local beaver in Norrköping'
 	},
 	{
 		slug: 'beaver',
@@ -72,13 +72,13 @@ export const posts = [
 		slug: 'possum',
 		title: 'Possumtory',
 		image: possumtory,
-		content: 'Single page react project with threejs to for 3D, <a href="https://olvard.github.io/repossumtory/possumtory/build/">link</a>'
+		content: 'Single page react project with threejs to for 3D'
 	},
 	{
 		slug: 'merit',
 		title: 'Merit WebApp',
 		image: merit,
-		content: 'Web-app i made with my friends for students at our program. Check it out <a href="https://filipbagen.github.io/merit/">here</a>'
+		content: 'Web-app i made with my friends for students at our program.'
 	},
 
 

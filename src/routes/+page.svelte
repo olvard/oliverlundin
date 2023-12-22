@@ -10,26 +10,24 @@
 	<meta name="description" content="" />
 </svelte:head>
 
-<section>
-	{#each data.summaries as { slug, title, image }}
-		<Showcase imageSrc={image} text={title} ref="/{slug}" />
+<section class="grid-container">
+	{#each data.summaries as { slug, title, content }}
+		<Showcase {content} text={title} ref="/{slug}" />
 	{/each}
 </section>
 
 <style>
-	section {
-		display: flex;
-		flex-wrap: wrap;
+	.grid-container {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, 287px); /* Set a fixed width for each item */
+		gap: 20px; /* Adjust the gap between items as needed */
+		width: 1000px;
 		justify-content: center;
-		align-items: center;
-		gap: 2.4em;
-		padding: 0px;
-		width: 90%;
 	}
 
-	@media (max-width: 768px) {
-		section {
-			max-width: 100vw;
+	@media (max-width: 1000px) {
+		.grid-container {
+			width: 80%;
 		}
 	}
 </style>

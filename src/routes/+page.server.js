@@ -5,6 +5,7 @@ export function load() {
 		summaries: posts?.map((post) => ({
 			slug: post.slug,
 			title: post.title,
+			content: post.content,
 			image: post.image,
 			image2: post.image2,
 			image3: post.image3,

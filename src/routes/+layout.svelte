@@ -6,9 +6,6 @@
 
 <div class="app">
 	<Header />
-	<div class="bar">
-		<img src={bar} alt="svg" />
-	</div>
 	<main>
 		<slot />
 	</main>
@@ -25,19 +22,10 @@
 		min-height: 100vh;
 	}
 
-	.bar {
-		display: flex;
-		justify-content: center;
-	}
-
 	p {
 		font-family: 'Syne';
 		color: antiquewhite;
 		opacity: 20%;
-	}
-
-	img {
-		width: 90%;
 	}
 
 	main {

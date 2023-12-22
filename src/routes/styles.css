@@ -29,7 +29,7 @@ body {
 	/* background-color: var(--color-bg-1); */
 	background-size: 100vw 100vh;
 	/* background: linear-gradient(180deg, #FFF 0%, #E2E2E2 100%); */
-	background-color: rgb(26, 26, 26);
+	background-color: #000000;
 	overflow-x: hidden;
 
 }

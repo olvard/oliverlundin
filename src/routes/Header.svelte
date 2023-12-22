@@ -19,27 +19,20 @@
 
 <header>
 	<div class="title">
-		<!-- <img src={logo} alt="logo" /> -->
 		<h1><a href="/">{text}</a></h1>
 		<h2>PROJECTS</h2>
-		<!-- <h1 class="offset">Lundin</h1> -->
 	</div>
-
-	<!-- <div class="nav">
-		<a href="mailto:oliver.lundin@live.se"><h1>CONTACT</h1></a>
-	</div> -->
 </header>
 
 <style>
 	header {
 		display: flex;
 		flex-wrap: wrap;
-		/* justify-content: left; */
 		align-items: flex-start;
+		justify-content: center;
 		flex: 0.6;
 		padding-top: 0px;
-		margin: 0px;
-		background-color: rgb(26, 26, 26);
+		background-color: #000000;
 		width: 100vw;
 	}
 
@@ -47,7 +40,8 @@
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
-		margin-left: 140px;
+
+		width: 900px;
 	}
 
 	h1 {
@@ -71,7 +65,7 @@
 		font-weight: 800;
 		font-size: 12px;
 		line-height: normal;
-		margin-bottom: 15px;
+		margin-bottom: 1px;
 	}
 
 	@media (max-width: 768px) {
