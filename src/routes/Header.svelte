@@ -2,7 +2,7 @@
 	import { onMount } from 'svelte'
 
 	let text = ''
-	const originalText = 'OLIVER LUNDIN.'
+	const originalText = 'Oliver Lundin.'
 
 	onMount(() => {
 		// Function to simulate typing effect
@@ -20,7 +20,7 @@
 <header>
 	<div class="title">
 		<h1><a href="/">{text}</a></h1>
-		<h2>PROJECTS</h2>
+		<h2>Projects</h2>
 	</div>
 </header>
 
@@ -45,13 +45,13 @@
 	}
 
 	h1 {
-		font-family: 'Syne';
-		font-weight: 800;
+		font-family: 'Switzer';
+		font-weight: 900;
 		margin: 0px;
 		padding-bottom: 0px;
 		color: #d9d9d9;
 		text-align: center;
-		font-size: 24px;
+		font-size: 34px;
 		line-height: normal;
 		margin-bottom: -5px;
 		margin-top: 15px;
@@ -61,9 +61,9 @@
 		margin: 0px;
 		color: #d9d9d9;
 		text-align: center;
-		font-family: Syne;
-		font-weight: 800;
-		font-size: 12px;
+		font-family: 'Switzer';
+		font-weight: 900;
+		font-size: 18px;
 		line-height: normal;
 		margin-bottom: 1px;
 	}

@@ -2,7 +2,6 @@
 	import Showcase from './Showcase.svelte'
 
 	export let data
-	console.log(data)
 </script>
 
 <svelte:head>
@@ -11,8 +10,8 @@
 </svelte:head>
 
 <section class="grid-container">
-	{#each data.summaries as { slug, title, content }}
-		<Showcase {content} text={title} ref="/{slug}" />
+	{#each data.summaries as { title, content, link, image, image2, image3, image4 }}
+		<Showcase {content} text={title} {link} {image} {image2} {image3} {image4} />
 	{/each}
 </section>
 

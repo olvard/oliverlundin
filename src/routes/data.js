@@ -49,7 +49,8 @@ export const posts = [
 		slug: 'bertilchat',
 		title: 'BertilChat',
 		image: bertilchat,
-		content: 'An AI chatbot built with the OpenAi API, it allows you to chat with the local beaver in Norrköping'
+		content: 'An AI chatbot built with the OpenAi API, it allows you to chat with the local beaver in Norrköping',
+		link: 'https://chatwithbertil.vercel.app'
 	},
 	{
 		slug: 'beaver',
