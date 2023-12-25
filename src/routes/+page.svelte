@@ -1,6 +1,5 @@
 <script>
 	import Showcase from './Showcase.svelte'
-
 	export let data
 </script>
 

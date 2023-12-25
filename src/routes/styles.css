@@ -34,6 +34,8 @@ body {
 
 }
 
+
+
 /* width */
 ::-webkit-scrollbar {
 	width: 10px;
@@ -46,7 +48,7 @@ body {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-	background: #f16040;
+	background: #8159d8;
 }
 
 /* Handle on hover */

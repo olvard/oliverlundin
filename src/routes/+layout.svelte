@@ -11,7 +11,7 @@
 	</main>
 
 	<footer>
-		<p>Oliver Lundin</p>
+		<p>Made by Oliver Lundin</p>
 	</footer>
 </div>
 
@@ -43,10 +43,15 @@
 
 	footer {
 		display: flex;
+
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		padding: 12px;
+	}
+
+	footer p {
+		font-family: monospace;
 	}
 
 	@media (min-width: 480px) {

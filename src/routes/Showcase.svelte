@@ -1,6 +1,5 @@
 <script>
 	import { GalleryImage, Lightbox, LightboxGallery } from 'svelte-lightbox'
-	import git from '$lib/images/github.svg'
 
 	export let content = ''
 	export let text = ''
@@ -25,11 +24,28 @@
 </script>
 
 <div class="container">
-	<h1 role="button" on:click={openLightbox} on:keydown={handleKeyPress} tabindex="0">{text}</h1>
-	<p role="button" on:click={openLightbox} on:keydown={handleKeyPress} tabindex="0" class="content">{content}</p>
+	<h1 role="none" on:click={openLightbox} on:keydown={handleKeyPress} tabindex="-1">{text}</h1>
+	<p role="none" on:click={openLightbox} on:keydown={handleKeyPress} tabindex="-1" class="content">{content}</p>
 
 	{#if link}
-		<a href={link}>Check it out here</a>
+		<a href={link} target="_blank"
+			>Check it out here <svg
+				xmlns="http://www.w3.org/2000/svg"
+				width="14"
+				height="14"
+				viewBox="0 0 247 248"
+				fill="none"
+				style="margin-left: 5px; vertical-align: middle;"
+			>
+				<path
+					d="M88.2249 32.4445H62.8249C47.0189 32.4445 39.11 32.4445 33.073 35.5206C27.7626 38.2262 23.4482 42.5406 20.7426 47.851C17.6665 53.888 17.6665 61.7969 17.6665 77.6029V184.847C17.6665 200.653 17.6665 208.553 20.7426 214.589C23.4482 219.899 27.7626 224.222 33.073 226.927C39.1041 230 47.0034 230 62.7784 230H170.11C185.885 230 193.773 230 199.804 226.927C205.114 224.222 209.444 219.895 212.149 214.585C215.222 208.554 215.222 200.663 215.222 184.888V159.444M229.333 88.8889V18.3334M229.333 18.3334H158.778M229.333 18.3334L130.555 117.111"
+					stroke="#8159D8"
+					stroke-width="25"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+				/>
+			</svg></a
+		>
 	{/if}
 
 	<Lightbox>
@@ -51,7 +67,12 @@
 			{/if}
 			{#if image4}
 				<GalleryImage>
-					<img src={image4} alt="error" />
+					<video controls>
+						<source src={image4} type="video/mp4" playsinline />
+
+						This videoformat is not supported on your browser.
+						<track kind="captions" />
+					</video>
 				</GalleryImage>
 			{/if}
 		</LightboxGallery>
@@ -79,11 +100,43 @@
 		border: 2px solid;
 		border-color: #8159d8;
 		border-radius: 5px;
-		transition: transform 0.3s ease; /* Adding transition for smooth animation */
+		transition: transform 0.5s ease;
+		transform-style: preserve-3d;
+		perspective: 1000px;
+		position: relative;
+		overflow: hidden;
+	}
+
+	.container::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(57, 57, 57, 0.1); /* Adjust the overlay color */
+		transition: opacity 0.3s ease;
+		pointer-events: none;
+		z-index: 1;
+		opacity: 0;
+	}
+
+	.container:hover::before {
+		opacity: 1;
 	}
 
 	.container:hover {
-		transform: skew(-10deg); /* Adjust the skew angle as needed */
+		transform: rotateY(10deg) scale(1.05); /* Adjust the degree of rotation and scale */
+		box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Adjust the shadow values */
+	}
+
+	.video-container {
+		max-width: 100%;
+		max-height: 80vh; /* Adjust the height as needed */
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		overflow: hidden;
 	}
 
 	.content {
@@ -100,10 +153,15 @@
 
 	a {
 		text-decoration: none;
-		font-family: monospace;
+		font-family: 'Switzer';
+		font-weight: 600;
 		color: #8159d8;
 		position: absolute;
 		bottom: 16px;
 		left: 16px;
+	}
+
+	a:hover {
+		text-decoration: underline;
 	}
 </style>
