@@ -2,9 +2,10 @@
 import mtd from '$lib/images/mtd/mtd.jpg'
 import mtd2 from '$lib/images/mtd/mtd2.jpg'
 import mtd4 from '$lib/images/mtd/fish.mp4'
+import mtd5 from '$lib/images/mtd/Blad_compressed.pdf'
 
 //Bertilchat
-import bertilchat from '$lib/images/bertilchat.png'
+import bertilchat from '$lib/images/bertil/bertilchat.png'
 
 //rumpanbar
 import drinkmeny from '$lib/images/rumpanbar/drinkmeny.png'
@@ -17,10 +18,10 @@ import drivingjournal from '$lib/images/drivingjournal/drivingjournal.png'
 import drivingjournal2 from '$lib/images/drivingjournal/drivingjournal2.png'
 
 //Possum
-import possumtory from '$lib/images/possumtory.png'
+import possumtory from '$lib/images/possum/possumtory.png'
 
 //Merit
-import merit from '$lib/images/merit.jpg'
+import merit from '$lib/images/merit/merit.jpg'
 
 export const posts = [
 	{
@@ -37,7 +38,8 @@ export const posts = [
 		// image2: mtd2,
 		// image3: mtd3,
 		image4: mtd4,
-		content: 'Medieteknikdagen is a career fair for students enrolled at the MT program. For this year i was head of graphic design which meant designing many different graphics and prints, here are some examples.'
+		content: 'Medieteknikdagen is a career fair for students enrolled at the MT program. I was head of graphic design which meant designing many different graphics and prints.',
+		link: mtd5
 
 	},
 	{

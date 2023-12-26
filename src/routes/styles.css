@@ -35,6 +35,9 @@ body {
 }
 
 
+.svelte-lightbox-body {
+	max-width: 70vw !important;
+}
 
 /* width */
 ::-webkit-scrollbar {

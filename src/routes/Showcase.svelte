@@ -29,7 +29,7 @@
 
 	{#if link}
 		<a href={link} target="_blank"
-			>Check it out here <svg
+			>View more <svg
 				xmlns="http://www.w3.org/2000/svg"
 				width="14"
 				height="14"
@@ -49,7 +49,10 @@
 	{/if}
 
 	<Lightbox>
-		<LightboxGallery bind:programmaticController={lightboxController}>
+		<LightboxGallery
+			bind:programmaticController={lightboxController}
+			arrowsConfig={{ color: 'white', character: 'hide' }}
+		>
 			{#if image}
 				<GalleryImage>
 					<img src={image} alt="error" />
@@ -128,15 +131,6 @@
 	.container:hover {
 		transform: rotateY(10deg) scale(1.05); /* Adjust the degree of rotation and scale */
 		box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Adjust the shadow values */
-	}
-
-	.video-container {
-		max-width: 100%;
-		max-height: 80vh; /* Adjust the height as needed */
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		overflow: hidden;
 	}
 
 	.content {
